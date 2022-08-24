@@ -25,7 +25,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 32
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -33,7 +33,8 @@ android {
     defaultConfig {
         // Should be the same as px-android: 
         //  https://github.com/mercadopago/px-android/blob/master/gradle.properties
-        minSdkVersion 19
+        minSdkVersion 21
+        targetSdkVersion 32
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
